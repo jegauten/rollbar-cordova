@@ -1,6 +1,6 @@
 {
   "name": "rollbar-cordova",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Rollbar offical supported plugin for Cordova. Provides full Rollbar functionality for Javascript, and native iOS and Android environments.",
   "repository": {
     "type": "git",
