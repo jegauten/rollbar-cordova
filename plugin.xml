@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="rollbar-cordova" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="rollbar-cordova" version="0.1.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>RollbarCordova</name>
     <js-module name="RollbarProxy" src="www/RollbarProxy.js">
         <clobbers target="RollbarProxy" />
@@ -46,17 +46,7 @@
     </platform>
 
     <platform name="ios">
-        <podspec>
-          <config>
-            <source url="https://cdn.cocoapods.org/"/>
-          </config>
-          <pods use-frameworks="true">
-            <!-- load via cocoapods or git -->
-            <pod name="Rollbar" spec="~> 1.6.0"/>
-            <!-- pod name="Rollbar" git="git@github.com:rollbar/rollbar-ios.git" branch="master"/ -->
-          </pods>
-        </podspec>
-
+        <pod name="Rollbar" spec="1.12.14"/>
         <config-file target="config.xml" parent="/*">
             <feature name="RollbarCordova">
                 <param name="ios-package" value="RollbarCordova" />
